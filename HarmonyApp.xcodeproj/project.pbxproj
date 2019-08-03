@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23779E636A0CEBB6AB095784 /* Pods_HarmonyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD05951E080CE2C93E9E3CF4 /* Pods_HarmonyApp.framework */; };
 		29BDB4A222F4F61B00E45AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB4A122F4F61B00E45AD9 /* AppDelegate.swift */; };
 		29BDB4A422F4F61B00E45AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB4A322F4F61B00E45AD9 /* ViewController.swift */; };
 		29BDB4A722F4F61B00E45AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BDB4A522F4F61B00E45AD9 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		29BDB4A822F4F61C00E45AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29BDB4AB22F4F61C00E45AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29BDB4AD22F4F61C00E45AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BFF505E760FB65DCC37E42 /* Pods-HarmonyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp.release.xcconfig"; sourceTree = "<group>"; };
+		8628C01D14801B8EBE31C023 /* Pods-HarmonyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD05951E080CE2C93E9E3CF4 /* Pods_HarmonyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarmonyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23779E636A0CEBB6AB095784 /* Pods_HarmonyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09327C8FDAA2AD6EAD66E640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD05951E080CE2C93E9E3CF4 /* Pods_HarmonyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29BDB49522F4F61B00E45AD9 = {
 			isa = PBXGroup;
 			children = (
 				29BDB4A022F4F61B00E45AD9 /* HarmonyApp */,
 				29BDB49F22F4F61B00E45AD9 /* Products */,
+				EE2F596346C87B8DE002F44C /* Pods */,
+				09327C8FDAA2AD6EAD66E640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = HarmonyApp;
 			sourceTree = "<group>";
 		};
+		EE2F596346C87B8DE002F44C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8628C01D14801B8EBE31C023 /* Pods-HarmonyApp.debug.xcconfig */,
+				65BFF505E760FB65DCC37E42 /* Pods-HarmonyApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29BDB4B022F4F61C00E45AD9 /* Build configuration list for PBXNativeTarget "HarmonyApp" */;
 			buildPhases = (
+				BA13ED3C579E2BBAA4F7D359 /* [CP] Check Pods Manifest.lock */,
 				29BDB49A22F4F61B00E45AD9 /* Sources */,
 				29BDB49B22F4F61B00E45AD9 /* Frameworks */,
 				29BDB49C22F4F61B00E45AD9 /* Resources */,
+				10244E0BEBC40CBAFE667F4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10244E0BEBC40CBAFE667F4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA13ED3C579E2BBAA4F7D359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarmonyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29BDB49A22F4F61B00E45AD9 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		29BDB4B122F4F61C00E45AD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8628C01D14801B8EBE31C023 /* Pods-HarmonyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +374,7 @@
 		};
 		29BDB4B222F4F61C00E45AD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BFF505E760FB65DCC37E42 /* Pods-HarmonyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
