@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A15FE361C44114D5195300EAB7329F7B"
+               BlueprintIdentifier = "B92079A69877D5DA3FEC3E0DE0CD8B28"
                BlueprintName = "Pods-HarmonyApp"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-HarmonyApp.framework">

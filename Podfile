@@ -14,6 +14,7 @@ target 'HarmonyApp' do
   pod 'Kingfisher'
   pod 'SVProgressHUD'
   pod 'SideMenu'
-  
+  pod 'Cosmos'
+  pod 'fluid-slider'
 
 end

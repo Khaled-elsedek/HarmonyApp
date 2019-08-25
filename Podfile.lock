@@ -1,13 +1,19 @@
 PODS:
   - Alamofire (4.8.2)
+  - Cosmos (19.0.3)
+  - fluid-slider (1.1.0):
+    - pop
   - IBAnimatable (6.0.0)
   - Kingfisher (5.7.0)
+  - pop (1.0.12)
   - SideMenu (5.0.3)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Cosmos
+  - fluid-slider
   - IBAnimatable
   - Kingfisher
   - SideMenu
@@ -17,20 +23,26 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Cosmos
+    - fluid-slider
     - IBAnimatable
     - Kingfisher
+    - pop
     - SideMenu
     - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
+  fluid-slider: 68037ac7247f16a89f3e24ff5d0167c8eea6f50b
   IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 9c30063462502b709031c1f39f69c7757d5b9fc4
+PODFILE CHECKSUM: b1be968d081396b7be53a12d010bf1be695a837f
 
 COCOAPODS: 1.5.2

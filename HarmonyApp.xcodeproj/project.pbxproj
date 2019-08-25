@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		23779E636A0CEBB6AB095784 /* Pods_HarmonyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD05951E080CE2C93E9E3CF4 /* Pods_HarmonyApp.framework */; };
+		29A6E71F230A0B8100143FF1 /* sideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6E71E230A0B8100143FF1 /* sideMenuViewController.swift */; };
 		29BDB4A222F4F61B00E45AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB4A122F4F61B00E45AD9 /* AppDelegate.swift */; };
-		29BDB4A422F4F61B00E45AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BDB4A322F4F61B00E45AD9 /* ViewController.swift */; };
 		29BDB4A722F4F61B00E45AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BDB4A522F4F61B00E45AD9 /* Main.storyboard */; };
 		29BDB4A922F4F61C00E45AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29BDB4A822F4F61C00E45AD9 /* Assets.xcassets */; };
 		29BDB4AC22F4F61C00E45AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BDB4AA22F4F61C00E45AD9 /* LaunchScreen.storyboard */; };
+		29C1AB0922F551DD0019F0EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1AB0822F551DD0019F0EF /* LoginViewController.swift */; };
+		29C1AB0B22F551EB0019F0EF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1AB0A22F551EB0019F0EF /* RegisterViewController.swift */; };
+		29CD86012309D17100AC273D /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CD86002309D17100AC273D /* mainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29A6E71E230A0B8100143FF1 /* sideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuViewController.swift; sourceTree = "<group>"; };
 		29BDB49E22F4F61B00E45AD9 /* HarmonyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarmonyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29BDB4A122F4F61B00E45AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29BDB4A322F4F61B00E45AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29BDB4A622F4F61B00E45AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29BDB4A822F4F61C00E45AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29BDB4AB22F4F61C00E45AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29BDB4AD22F4F61C00E45AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C1AB0822F551DD0019F0EF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		29C1AB0A22F551EB0019F0EF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		29CD86002309D17100AC273D /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		65BFF505E760FB65DCC37E42 /* Pods-HarmonyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp.release.xcconfig"; sourceTree = "<group>"; };
 		8628C01D14801B8EBE31C023 /* Pods-HarmonyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CD05951E080CE2C93E9E3CF4 /* Pods_HarmonyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarmonyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,14 +75,41 @@
 		29BDB4A022F4F61B00E45AD9 /* HarmonyApp */ = {
 			isa = PBXGroup;
 			children = (
+				29C1AB0722F551C20019F0EF /* Model */,
+				29C1AB0622F551B90019F0EF /* View */,
+				29C1AB0522F551A40019F0EF /* Controller */,
 				29BDB4A122F4F61B00E45AD9 /* AppDelegate.swift */,
-				29BDB4A322F4F61B00E45AD9 /* ViewController.swift */,
 				29BDB4A522F4F61B00E45AD9 /* Main.storyboard */,
 				29BDB4A822F4F61C00E45AD9 /* Assets.xcassets */,
 				29BDB4AA22F4F61C00E45AD9 /* LaunchScreen.storyboard */,
 				29BDB4AD22F4F61C00E45AD9 /* Info.plist */,
 			);
 			path = HarmonyApp;
+			sourceTree = "<group>";
+		};
+		29C1AB0522F551A40019F0EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29C1AB0822F551DD0019F0EF /* LoginViewController.swift */,
+				29C1AB0A22F551EB0019F0EF /* RegisterViewController.swift */,
+				29CD86002309D17100AC273D /* mainViewController.swift */,
+				29A6E71E230A0B8100143FF1 /* sideMenuViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		29C1AB0622F551B90019F0EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29C1AB0722F551C20019F0EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EE2F596346C87B8DE002F44C /* Pods */ = {
@@ -165,20 +198,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HarmonyApp/Pods-HarmonyApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/fluid-slider/fluid_slider.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fluid_slider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -210,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29BDB4A422F4F61B00E45AD9 /* ViewController.swift in Sources */,
+				29C1AB0B22F551EB0019F0EF /* RegisterViewController.swift in Sources */,
+				29A6E71F230A0B8100143FF1 /* sideMenuViewController.swift in Sources */,
 				29BDB4A222F4F61B00E45AD9 /* AppDelegate.swift in Sources */,
+				29C1AB0922F551DD0019F0EF /* LoginViewController.swift in Sources */,
+				29CD86012309D17100AC273D /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
