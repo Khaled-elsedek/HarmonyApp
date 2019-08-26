@@ -16,5 +16,7 @@ target 'HarmonyApp' do
   pod 'SideMenu'
   pod 'Cosmos'
   pod 'fluid-slider'
+  pod 'ObjiectMapper'
+  
 
 end
